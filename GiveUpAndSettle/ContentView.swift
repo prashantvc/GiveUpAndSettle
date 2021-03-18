@@ -9,8 +9,31 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        // 1
+        VStack {
+            DateView()
+        }.padding()
+    }
+}
+
+struct DateView: View {
+    var body: some View{
+        VStack() {
+            HStack{
+                VStack(alignment: .leading) {
+                    Text("Friday, 10th January")
+                        .font(.title)
+                        .bold()
+                    Text("Today")
+                        .font(.subheadline)
+                        .foregroundColor(.gray)
+                }
+                Spacer()
+            }.padding()
+        }
+        .background(Color.white)
+        .cornerRadius(10)
+        .shadow(radius: 5)
     }
 }
 
