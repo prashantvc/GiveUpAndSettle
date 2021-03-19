@@ -25,16 +25,10 @@ struct User: Hashable, CustomStringConvertible {
 struct ContentView: View {
     
     @State var users: [User] = [
-        User(id: 0, firstName: "Cindy", lastName: "Jones", age: 23, mutualFriends: 4, imageName: "person.fill", occupation: "Coach"),
-        User(id: 1, firstName: "Mark", lastName: "Bennett", age: 27, mutualFriends: 0, imageName: "person.circle.fill", occupation: "Insurance Agent"),
-        User(id: 2, firstName: "Clayton", lastName: "Delaney", age: 20, mutualFriends: 1, imageName: "person.fill", occupation: "Food Scientist"),
-        User(id: 3, firstName: "Brittni", lastName: "Watson", age: 19, mutualFriends: 4, imageName: "person.fill", occupation: "Historian"),
-        User(id: 4, firstName: "Archie", lastName: "Prater", age: 22, mutualFriends:18, imageName: "person.fill", occupation: "Substance Abuse Counselor"),
-        User(id: 5, firstName: "James", lastName: "Braun", age: 24, mutualFriends: 3, imageName: "person.fill", occupation: "Marketing Manager"),
-        User(id: 6, firstName: "Danny", lastName: "Savage", age: 25, mutualFriends: 16, imageName: "person.fill", occupation: "Dentist"),
-        User(id: 7, firstName: "Chi", lastName: "Pollack", age: 29, mutualFriends: 9, imageName: "person.fill", occupation: "Recreational Therapist"),
-        User(id: 8, firstName: "Josue", lastName: "Strange", age: 23, mutualFriends: 5, imageName: "person.fill", occupation: "HR Specialist"),
-        User(id: 9, firstName: "Debra", lastName: "Weber", age: 28, mutualFriends: 13, imageName: "person.fill", occupation: "Judge")
+        User(id: 0, firstName: "White", lastName: "Face", age: 4, mutualFriends: 4, imageName: "Dog", occupation: "Gaurd Dog"),
+        User(id: 1, firstName: "Maya", lastName: "", age: 1, mutualFriends: 2, imageName: "Cat2", occupation: "Unemployed"),
+        User(id: 2, firstName: "Maitry", lastName: "", age: 3, mutualFriends: 1, imageName: "Cat1", occupation: "Explorer"),
+        User(id: 3, firstName: "Raja", lastName: "", age: 6, mutualFriends: 4, imageName: "Cat", occupation: "House Cat"),
     ]
     
     private func getCardWidth(_ geometry: GeometryProxy, id: Int) -> CGFloat {

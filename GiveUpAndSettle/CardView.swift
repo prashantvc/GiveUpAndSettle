@@ -33,9 +33,9 @@ struct CardView: View {
         GeometryReader { geometry in
             VStack(alignment: .leading) {
                 ZStack(alignment: self.swipeStatus == .like ? .topLeading : .topTrailing) {
-                    Image(systemName: self.user.imageName)
+                    Image(self.user.imageName)
                         .resizable()
-                        .scaledToFit()
+                        .scaledToFill()
                         .frame(width: geometry.size.width, height: geometry.size.height * 0.75) // 3
                         .clipped()
                     
@@ -117,7 +117,7 @@ struct CardView: View {
 
 struct CardView_Previews: PreviewProvider {
     static var previews: some View {
-        CardView(user: User(id: 1, firstName: "Mark", lastName: "Bennett", age: 27, mutualFriends: 0, imageName: "person.circle.fill", occupation: "Insurance Agent"),
+        CardView(user: User(id: 1, firstName: "White", lastName: "Face", age: 4, mutualFriends: 1, imageName: "Dog", occupation: "Gaurd Dog"),
                  onRemove: { _ in
                     // do nothing
                  }).frame(height:400).padding()
